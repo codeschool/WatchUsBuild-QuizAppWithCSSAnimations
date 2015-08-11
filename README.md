@@ -1,15 +1,9 @@
-Web Animations Quiz
+Web Animations Quiz, STB Version
 ===================
 
 A simple quiz application to determine what Sweet Lands character you are.
 
 Setup
 -----
-
-```shell
-$ npm install # Install dependencies
-$ gulp        # Watch files
-$ npm start   # Run Node server
-```
-
-View site at `http://locahost:8080`.
+- clone the repo
+- open index.html in browser of choice
