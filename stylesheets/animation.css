@@ -1,0 +1,221 @@
+/*Global Animations*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes slideDown {
+  from {
+   -webkit-transform: translateY(-300px);
+           transform: translateY(-300px);
+  }
+  to {
+   -webkit-transform: translateY(0px);
+           transform: translateY(0px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+   -webkit-transform: translateY(-300px);
+           transform: translateY(-300px);
+  }
+  to {
+   -webkit-transform: translateY(0px);
+           transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  from {
+   -webkit-transform: translateY(100%);
+           transform: translateY(100%);
+  }
+  to {
+   -webkit-transform: translateY(0px);
+           transform: translateY(0px);
+  }
+}
+
+@keyframes slideUp {
+  from {
+   -webkit-transform: translateY(100%);
+           transform: translateY(100%);
+  }
+  to {
+   -webkit-transform: translateY(0px);
+           transform: translateY(0px);
+  }
+}
+
+/* Dan Eden Inspired Animations */
+/*https://github.com/daneden/animate.css/blob/master/source/attention_seekers/tada.css*/
+
+@-webkit-keyframes zoomIn {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+/*Logo Animations*/
+
+.index .brand--top {
+  -webkit-animation: fadeIn .5s, slideDown .5s;
+          animation: fadeIn .5s, slideDown .5s;
+}
+
+.index .main {
+  -webkit-animation: slideUp .75s;
+          animation: slideUp .75s;
+}
+
+/*Button Animations*/
+
+.btn {
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+
+/*Quiz Page Animations*/
+
+.answer-link {
+  -webkit-transition: all .5s;
+          transition: all .5s;
+}
+
+.answer-link.is-selected {
+  -webkit-transition: -webkit-transform .3s;
+          transition: transform .3s;
+  -webkit-transform: scale(1.025);
+      -ms-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+/*Results Page*/
+
+.character {
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: fadeIn .5s forwards, tada 1s;
+          animation: fadeIn .5s forwards, tada 1s;
+}
+
+.character-description {
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: fadeIn 1s .5s forwards;
+          animation: fadeIn 1s .5s forwards;
+}
+
+.share {
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: zoomIn .5s 1s forwards;
+          animation: zoomIn .5s 1s forwards;
+}
+
+.brand--bottom {
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
