@@ -192,27 +192,18 @@
 /*Results Page*/
 
 .character {
-  visibility: hidden;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-animation: fadeIn .5s forwards, tada 1s;
-          animation: fadeIn .5s forwards, tada 1s;
+  -webkit-animation: fadeIn .5s both, tada 1s;
+          animation: fadeIn .5s both, tada 1s;
 }
 
 .character-description {
-  visibility: hidden;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-animation: fadeIn 1s .5s forwards;
-          animation: fadeIn 1s .5s forwards;
+  -webkit-animation: fadeIn 1s .5s both;
+          animation: fadeIn 1s .5s both;
 }
 
 .share {
-  visibility: hidden;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-animation: zoomIn .5s 1s forwards;
-          animation: zoomIn .5s 1s forwards;
+  -webkit-animation: zoomIn .5s 1s both;
+          animation: zoomIn .5s 1s both;
 }
 
 .brand--bottom {
