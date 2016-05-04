@@ -1,9 +1,10 @@
-Web Animations Quiz, STB Version
-===================
+# Web Animations Quiz, Watch Us Build Version
 
-A simple quiz application to determine what Sweet Lands character you are.
+*We changed the name of this series to "Watch Us Build," so you may see an occasional reference to its former name ("Soup to Bits") in this repository.*
 
-Setup
------
+A simple quiz application to determine which Sweet Lands character you are.
+
+## Setup
+
 - clone the repo
-- open index.html in browser of choice
+- open `index.html` in browser of choice
